@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Sign-In script -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Specify the client ID for Google Sign-In -->
+    <meta name="google-signin-client_id" content="282886452694-04s21hmpjkra7al7pjk0ef72umss3h2n.apps.googleusercontent.com">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <!-- Manual account creation form -->
+        <form id="manualLoginForm" action="signup.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        
+        <!-- Google Sign-In button -->
+        <div class="google-login">
+            <h3>Or login with Google:</h3>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+
+    <!-- JavaScript code for handling Google Sign-In -->
+    <script>
+        // Function called when Google Sign-In succeeds
+        function onSignIn(googleUser) {
+            // Retrieve user profile information
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId());
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail());
+
+            // You can redirect the user to another page or perform further actions here
+            // For example, you can redirect the user to a dashboard page
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+</html>
