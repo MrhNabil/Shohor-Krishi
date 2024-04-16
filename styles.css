@@ -302,3 +302,14 @@ footer {
     font-size: 18px;
     color: #333;
 }
+@media only screen and (max-width: 768px) {
+    /* CSS for tablets and smaller devices */
+}
+
+@media only screen and (max-width: 480px) {
+    /* CSS for smartphones */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
