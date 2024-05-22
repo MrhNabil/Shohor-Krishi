@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos</title>
+    <title>Videos - Shohor Krishi</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Videos</h1>
+        <h1 class="project-name">Shohor Krishi</h1>
+        <button class="login-button" onclick="loginWithGoogle()">Login with Google</button>
     </header>
     <nav>
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="guides.html">Guides</a>
+        <a href="products.html">Products</a>
+        <a href="videos.html">Videos</a>
+        <a href="community.html">Community</a>
     </nav>
     <main>
-        <section>
+        <section class="videos-section">
             <h2>Informative Videos</h2>
             <!-- Embedded videos with titles and descriptions -->
             <div class="video">
@@ -45,7 +51,7 @@
             <div class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/XH_hsLik3XA?si=Jry25o5m4TEntj-x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <h3>Aquaponic Technology</h3>
-                <p>Gardening in any space with much presticides.</p>
+                <p>Gardening in any space with minimal pesticides.</p>
             </div>
             <!-- Add more videos as needed -->
         </section>
@@ -53,5 +59,6 @@
     <footer>
         <p>Back to <a href="index.html">Home</a></p>
     </footer>
+    <script src="firebase.js"></script>
 </body>
 </html>

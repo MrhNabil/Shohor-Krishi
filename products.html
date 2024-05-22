@@ -3,265 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Products - Shohor Krishi</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Products</h1>
+        <h1 class="project-name">Shohor Krishi</h1>
+        <button class="login-button" onclick="loginWithGoogle()">Login with Google</button>
     </header>
     <nav>
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="guides.html">Guides</a>
+        <a href="products.html">Products</a>
+        <a href="videos.html">Videos</a>
+        <a href="community.html">Community</a>
     </nav>
     <main>
         <section>
             <h2>Product Store</h2>
             <div class="product-list">
                 <!-- Product 1 -->
-                <div class="product">
-                    <img src="1.png" alt="Product 1">
+                <div class="product"  data-id="1">
+                    <img src="Images/1.png" alt="Product 1">
                     <h3>Hydroponic Grow Kit</h3>
                     <p>A complete hydroponic system for growing vegetables indoors.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 2 -->
-                <div class="product">
-                    <img src="2.jpg" alt="Product 2">
+                <div class="product" data-id="2">
+                    <img src="Images/2.jpg" alt="Product 2">
                     <h3>LED Grow Lights</h3>
                     <p>High-quality LED grow lights for optimizing plant growth.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 3 -->
-                <div class="product">
-                    <img src="3.jpg" alt="Product 3">
+                <div class="product" data-id="3">
+                    <img src="Images/3.jpg" alt="Product 3">
                     <h3>Vertical Grow Tower</h3>
                     <p>A vertical growing tower for maximizing space efficiency.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 4 -->
-                <div class="product">
-                    <img src="4.jpg" alt="Product 4">
+                <div class="product" data-id="4">
+                    <img src="Images/4.jpg" alt="Product 4">
                     <h3>Hydroponic Nutrient Solution</h3>
                     <p>A balanced nutrient solution specifically formulated for hydroponic systems.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 5 -->
-                <div class="product">
-                    <img src="5.png" alt="Product 5">
+                <div class="product" data-id="5">
+                    <img src="Images/5.png" alt="Product 5">
                     <h3>Indoor Grow Tent</h3>
                     <p>A sturdy and lightweight grow tent for indoor cultivation.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 6 -->
-                <div class="product">
+                <div class="product" data-id="6">
                     <img src="6.jpeg" alt="Product 6">
                     <h3>Organic Potting Soil</h3>
                     <p>Nutrient-rich organic potting soil for container gardening.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 7 -->
-                <div class="product">
+                <div class="product" data-id="7">
                     <img src="7.png" alt="Product 7">
                     <h3>Aquaponics System</h3>
                     <p>Aquaponics kit for combining aquaculture and hydroponics.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 8 -->
-                <div class="product">
+                <div class="product" data-id="8">
                     <img src="8.jpeg" alt="Product 8">
                     <h3>Pruning Shears</h3>
                     <p>Sharp and durable pruning shears for trimming plants.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 9 -->
-                <div class="product">
+                <div class="product" data-id="9">
                     <img src="9.jpg" alt="Product 9">
                     <h3>Seed Starting Trays</h3>
                     <p>Seed trays with dome lids for germinating seeds indoors.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 10 -->
-                <div class="product">
+                <div class="product" data-id="10">
                     <img src="10.jpg" alt="Product 10">
                     <h3>pH Testing Kit</h3>
                     <p>Accurate pH testing kit for monitoring nutrient solutions.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 11 -->
-                <div class="product">
+                <div class="product" data-id="11">
                     <img src="11.jpg" alt="Product 11">
                     <h3>Grow Room Fan</h3>
                     <p>High-performance fan for maintaining optimal airflow in grow rooms.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 12 -->
-                <div class="product">
+                <div class="product" data-id="12">
                     <img src="12.jpg" alt="Product 12">
                     <h3>Organic Pest Control</h3>
                     <p>Safe and effective organic pest control solution for indoor gardens.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 13 -->
-                <div class="product">
+                <div class="product" data-id="13">
                     <img src="13.jpg" alt="Product 13">
                     <h3>Grow Light Timer</h3>
                     <p>Programmable timer for controlling grow lights and maintaining light cycles.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 14 -->
-                <div class="product">
+                <div class="product" data-id="14">
                     <img src="14.jpg" alt="Product 14">
                     <h3>Vertical Planter Pots</h3>
                     <p>Stackable planter pots for vertical gardening in small spaces.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 15 -->
-                <div class="product">
+                <div class="product" data-id="15">
                     <img src="15.png" alt="Product 15">
                     <h3>Microgreen Seeds</h3>
                     <p>Assorted microgreen seeds for nutritious and flavorful greens.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 16 -->
-                <div class="product">
+                <div class="product" data-id="16">
                     <img src="16.jpg" alt="Product 16">
                     <h3>Plant Grow Bags</h3>
                     <p>Durable and breathable grow bags for container gardening.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 17 -->
-                <div class="product">
+                <div class="product" data-id="17">
                     <img src="17.jpg" alt="Product 17">
                     <h3>Compost Bin</h3>
                     <p>Compact compost bin for recycling organic waste into nutrient-rich compost.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 18 -->
-                <div class="product">
+                <div class="product" data-id="18">
                     <img src="18.jpg" alt="Product 18">
                     <h3>Hygrometer</h3>
                     <p>Accurate hygrometer for monitoring humidity levels in grow rooms.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 19 -->
-                <div class="product">
+                <div class="product" data-id="19">
                     <img src="19.png" alt="Product 19">
                     <h3>Seedling Heat Mat</h3>
                     <p>Electric heat mat for providing consistent warmth to seedlings.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 20 -->
-                <div class="product">
+                <div class="product" data-id="20">
                     <img src="20.jpg" alt="Product 20">
                     <h3>Garden Hand Trowel</h3>
                     <p>Sturdy hand trowel for transplanting seedlings and potting plants.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 21 -->
-                <div class="product">
+                <div class="product" data-id="21">
                     <img src="21.jpg" alt="Product 21">
                     <h3>Rooting Hormone</h3>
                     <p>Rooting hormone powder for promoting healthy root development.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 22 -->
-                <div class="product">
+                <div class="product" data-id="22">
                     <img src="22.jpg" alt="Product 22">
                     <h3>Pruning Saw</h3>
                     <p>Sharp pruning saw for trimming branches and thicker stems.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 23 -->
-                <div class="product">
+                <div class="product" data-id="23">
                     <img src="23.jpg" alt="Product 23">
                     <h3>Indoor Herb Garden Kit</h3>
                     <p>All-in-one kit for growing fresh herbs indoors throughout the year.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 24 -->
-                <div class="product">
+                <div class="product" data-id="24">
                     <img src="24.jpg" alt="Product 24">
                     <h3>Garden Gloves</h3>
                     <p>Durable and protective gloves for gardening tasks.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 25 -->
-                <div class="product">
+                <div class="product" data-id="25">
                     <img src="25.jpeg" alt="Product 25">
                     <h3>Soil pH Tester</h3>
                     <p>Handheld soil pH tester for measuring acidity and alkalinity levels.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 26 -->
-                <div class="product">
+                <div class="product" data-id="26">
                     <img src="26.png" alt="Product 26">
                     <h3>Plant Labels</h3>
                     <p>Weather-resistant plant labels for identifying different crops.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 27 -->
-                <div class="product">
+                <div class="product" data-id="27">
                     <img src="27.jpg" alt="Product 27">
                     <h3>Garden Watering Can</h3>
                     <p>Stylish and functional watering can for watering indoor and outdoor plants.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 28 -->
-                <div class="product">
+                <div class="product" data-id="28">
                     <img src="28.jpeg" alt="Product 28">
                     <h3>Plant Mister</h3>
                     <p>Fine mist plant sprayer for providing gentle hydration to delicate plants.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 29 -->
-                <div class="product">
+                <div class="product" data-id="29">
                     <img src="29.png" alt="Product 29">
                     <h3>Garden Kneeler</h3>
                     <p>Comfortable garden kneeler for reducing strain on knees and joints while gardening.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <!-- Product 30 -->
-                <div class="product">
+                <div class="product" data-id="30">
                     <img src="30.jpg" alt="Product 30">
                     <h3>Plant Trellis</h3>
                     <p>Decorative plant trellis for supporting climbing plants and vines.</p>
                     <p>Price: $.99</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>Back to <a href="index.html">Home</a></p>
-    </footer>
+            <section id="cart-section">
+                <h2>Your Cart</h2>
+                <div class="cart-items">
+                    </div>
+                <div class="cart-total">
+                    <p>Total: $<span id="total-price">0.00</span></p>
+                    <button id="pay-now">Pay Now</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Back to <a href="index.html">Home</a></p>
+        </footer>
+        <div id="cart-notification" class="floating-notification">
+            <section id="cart-section">
+                <h2>Your Cart</h2>
+                <div class="cart-items">
+                    </div>
+                <div class="cart-total">
+                    <p>Total: $<span id="total-price">0.00</span></p>
+                    <button id="pay-now">Pay Now</button>
+                </div>
+            </section>
+            <p>Product added to cart!</p>
+            <a href="cart.html">View Cart</a>
+        </div>
+        <div class="cartTab">
+            <h1>Shopping Cart</h1>
+            <div class="listCart">
+                
+            </div>
+            <div class="btn">
+                <button class="close">CLOSE</button>
+                <button class="checkOut">Check Out</button>
+            </div>
+    
+        <script src="script.js"></script>
 </body>
 </html>
